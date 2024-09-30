@@ -35,7 +35,7 @@ jobs:
 
     steps:
       - name: Debug MSSQL Container Start
-        run: docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YourStrong!Passw0rd' mcr.microsoft.com/mssql/server:2019-CU22-ubuntu-20.04
+        run: docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=YourStrong!Passw0rd' mcr.microsoft.com/mssql/server:2019-CU23-ubuntu-20.04
 
       - name: Checkout Repository
         uses: actions/checkout@v4
